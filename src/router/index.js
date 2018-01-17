@@ -37,7 +37,7 @@ export const constantRouterMap = [
   {
     path: '/example',
     component: Layout,
-    redirect: '/example/table',
+    redirect: 'noredirect',
     name: 'Example',
     meta: { title: 'Example', icon: 'example' },
     children: [
@@ -68,6 +68,7 @@ export const constantRouterMap = [
       { path: '/process-controller/technology-path',
         component: () => import('@/views/process-controller/technology-path/index'),
         name: 'technology-path',
+        redirect: 'noredirect',
         meta: {
           title: '工艺路径',
           icon: 'example'
